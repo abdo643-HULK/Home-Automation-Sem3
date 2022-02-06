@@ -1,0 +1,26 @@
+# old test on markos tv
+tv_channel:
+  sequence:
+    alias: Fernseher ausschalten
+    service: media_player.play_media
+    target:
+      entity_id: media_player.samsung_8_series_65
+    data:
+      media_content_id: 2
+      media_content_type: channel
+tv_samsung_8_series_65:
+  alias: tv_ausschalten
+  sequence:
+    - service: media_player.turn_off
+      target:
+        device_id: c9c82257e943d733134da2117607229c
+  mode: single
+  icon: mdi:power
+tv_einschalten:
+  alias: tv_einschalten
+  sequence:
+    - service: media_player.turn_on
+      target:
+        device_id: c9c82257e943d733134da2117607229c
+  mode: single
+  icon: mdi:power

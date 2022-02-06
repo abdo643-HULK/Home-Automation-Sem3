@@ -1,0 +1,14 @@
+tvhub_activity_on:
+  alias: Turn on TV in Theater
+  sequence:
+    - service: remote.turn_on
+      entity_id: remote.harmonyhub
+      data:
+        activity: "Lauter drehen"
+tvhub_activity_off:
+  alias: Turn off TV in Theater
+  sequence:
+    - service: remote.turn_off
+      entity_id: remote.harmonyhub
+      data:
+        activity: "Lauter drehen"

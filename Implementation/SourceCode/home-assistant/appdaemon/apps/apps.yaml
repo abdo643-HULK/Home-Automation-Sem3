@@ -1,0 +1,4 @@
+---
+hub:
+  module: hub
+  class: Hub

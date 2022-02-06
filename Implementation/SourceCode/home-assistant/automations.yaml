@@ -1,0 +1,9 @@
+- id: room
+  alias: "Person recognition"
+  trigger:
+    - platform: webhook
+      webhook_id: "room"
+  action:
+    - event: room
+      event_data:
+        data: "{{ trigger.json }}"
